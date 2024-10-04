@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgGrid.InfiniteRowModel.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgGrid.InfiniteRowModel.EntityFrameworkCore", "src\AgGrid.InfiniteRowModel.EntityFrameworkCore\AgGrid.InfiniteRowModel.EntityFrameworkCore.csproj", "{9A28C0D8-FEA2-40D5-AF24-F20BB2B7BA08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgGrid.InfiniteRowModel.MongoDb.Tests", "tests\AgGrid.InfiniteRowModel.MongoDb.Tests\AgGrid.InfiniteRowModel.MongoDb.Tests.csproj", "{D3485EA2-9A85-4C0C-A50B-67C580BFBB6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9A28C0D8-FEA2-40D5-AF24-F20BB2B7BA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A28C0D8-FEA2-40D5-AF24-F20BB2B7BA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A28C0D8-FEA2-40D5-AF24-F20BB2B7BA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3485EA2-9A85-4C0C-A50B-67C580BFBB6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3485EA2-9A85-4C0C-A50B-67C580BFBB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3485EA2-9A85-4C0C-A50B-67C580BFBB6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3485EA2-9A85-4C0C-A50B-67C580BFBB6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{74AD98E5-8A82-4AC9-9531-B80915463B2D} = {0BBD24C7-9802-47D9-B84C-1203DEF1FE2C}
 		{CDE5B4A7-075F-4041-8F46-780EC489C8F9} = {62D44B2A-2545-402C-BF3F-479510BFD2F4}
 		{9A28C0D8-FEA2-40D5-AF24-F20BB2B7BA08} = {0BBD24C7-9802-47D9-B84C-1203DEF1FE2C}
+		{D3485EA2-9A85-4C0C-A50B-67C580BFBB6E} = {62D44B2A-2545-402C-BF3F-479510BFD2F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4F544CC-1E0D-4E1D-AE74-4142B12074D0}
