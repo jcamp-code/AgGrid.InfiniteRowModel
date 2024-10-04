@@ -80,6 +80,7 @@ namespace AgGrid.InfiniteRowModel.Tests
             Assert.Equal(1, result.RowsThisBlock.Single().Id);
         }
 
-        public virtual void Dispose() => _dbContext.Dispose();
+        public virtual void Dispose() => _dbContext.Connection.Client.DropDatabase(_dbContext.Connection.GetDatabase().DatabaseNamespace.DatabaseName);
+        // public virtual void Dispose() => _dbContext.Connection.Client.DropDatabase("AgGridTest");
     }
 }

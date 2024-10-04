@@ -122,6 +122,6 @@ namespace AgGrid.InfiniteRowModel.Tests
             Assert.Equal(18, result.RowsThisBlock.ElementAt(2).Age);
         }
 
-        public virtual void Dispose() => _dbContext.Dispose();
+        public virtual void Dispose() => _dbContext.Connection.Client.DropDatabase(_dbContext.Connection.GetDatabase().DatabaseNamespace.DatabaseName);
     }
 }

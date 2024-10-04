@@ -1,5 +1,4 @@
 ﻿using AgGrid.InfiniteRowModel.Sample.Entities;
-using Microsoft.EntityFrameworkCore;
 using MongoFramework;
 
 namespace AgGrid.InfiniteRowModel.Sample.Database

@@ -1,5 +1,4 @@
 ﻿using AgGrid.InfiniteRowModel.Sample.Database;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -106,6 +105,6 @@ namespace AgGrid.InfiniteRowModel.Tests
             Assert.Contains(query.FilterModel.First().Value.Operator, exception.Message);
         }
 
-        public void Dispose() => _dbContext.Dispose();
+        public virtual void Dispose() => _dbContext.Connection.Client.DropDatabase(_dbContext.Connection.GetDatabase().DatabaseNamespace.DatabaseName);
     }
 }

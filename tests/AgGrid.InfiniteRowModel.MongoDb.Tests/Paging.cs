@@ -56,6 +56,6 @@ namespace AgGrid.InfiniteRowModel.Tests
             Assert.Contains(page2.RowsThisBlock, u => u.FullName == "5");
         }
 
-        public virtual void Dispose() => _dbContext.Dispose();
+        public virtual void Dispose() => _dbContext.Connection.Client.DropDatabase(_dbContext.Connection.GetDatabase().DatabaseNamespace.DatabaseName);
     }
 }

@@ -2,7 +2,6 @@ using AgGrid.InfiniteRowModel.Sample.Database;
 using AgGrid.InfiniteRowModel.Sample.Entities;
 using AgGrid.InfiniteRowModel.Tests.Models;
 using AutoMapper;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +20,7 @@ namespace AgGrid.InfiniteRowModel.Tests
 
         [Theory]
         [InlineData("Kowal", FilterModelType.Contains, 1, 2)]
-        [InlineData("Kowal", FilterModelType.NotContains, 3)]
+        [InlineData("Kowal", FilterModelType.NotContains, 3, 4)]
         [InlineData("Ala Kowalska", FilterModelType.Equals, 1)]
         [InlineData("Ala Kowalska", FilterModelType.NotEqual, 2, 3, 4)]
         [InlineData("Ala", FilterModelType.StartsWith, 1, 3)]
@@ -744,6 +743,6 @@ namespace AgGrid.InfiniteRowModel.Tests
             Assert.Equal(3, result.RowsThisBlock.Single().Id);
         }
 
-        public virtual void Dispose() => _dbContext.Dispose();
+        public virtual void Dispose() => _dbContext.Connection.Client.DropDatabase(_dbContext.Connection.GetDatabase().DatabaseNamespace.DatabaseName);
     }
 }
