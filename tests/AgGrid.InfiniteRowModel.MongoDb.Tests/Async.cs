@@ -1,4 +1,4 @@
-﻿using AgGrid.InfiniteRowModel.EntityFrameworkCore;
+﻿using AgGrid.InfiniteRowModel.MongoFramework;
 using AgGrid.InfiniteRowModel.Sample.Database;
 using AgGrid.InfiniteRowModel.Sample.Entities;
 using System;

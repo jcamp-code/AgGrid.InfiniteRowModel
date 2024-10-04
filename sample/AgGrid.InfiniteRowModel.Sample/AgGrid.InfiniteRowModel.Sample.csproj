@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AgGrid.InfiniteRowModel.EntityFrameworkCore\AgGrid.InfiniteRowModel.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\src\AgGrid.InfiniteRowModel.EntityFrameworkCore\AgGrid.InfiniteRowModel.MongoFramework.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

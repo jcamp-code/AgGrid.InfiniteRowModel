@@ -6,7 +6,7 @@ using System.Linq.Dynamic.Core;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 
-[assembly: InternalsVisibleToAttribute("AgGrid.InfiniteRowModel.EntityFrameworkCore")]
+[assembly: InternalsVisibleToAttribute("AgGrid.InfiniteRowModel.MongoFramework")]
 namespace AgGrid.InfiniteRowModel
 {
     internal static class InfiniteScroll

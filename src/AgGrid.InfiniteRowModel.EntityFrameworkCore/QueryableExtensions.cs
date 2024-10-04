@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MongoFramework.Linq;
 
-namespace AgGrid.InfiniteRowModel.EntityFrameworkCore
+namespace AgGrid.InfiniteRowModel.MongoFramework
 {
     public static class QueryableExtensions
     {

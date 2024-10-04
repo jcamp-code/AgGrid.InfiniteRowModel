@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AgGrid.InfiniteRowModel.EntityFrameworkCore\AgGrid.InfiniteRowModel.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\src\AgGrid.InfiniteRowModel.EntityFrameworkCore\AgGrid.InfiniteRowModel.MongoFramework.csproj" />
     <ProjectReference Include="..\..\src\AgGrid.InfiniteRowModel\AgGrid.InfiniteRowModel.csproj" />
   </ItemGroup>
 

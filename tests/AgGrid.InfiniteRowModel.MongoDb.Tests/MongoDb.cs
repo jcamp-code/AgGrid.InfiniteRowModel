@@ -8,33 +8,20 @@ namespace AgGrid.InfiniteRowModel.Tests;
 
 public class MongoDb
 {
-    private static AppDbContext context;
     public static AppDbContext GetDbContext()
     {
-        var connection = MongoDbConnection.FromUrl(new MongoUrl($"mongodb://localhost:27017/{Guid.NewGuid().ToString()}")); //MongoUrl comes from the official MongoDB driver
-
-        // var dbContextOptions = new DbContextOptionsBuilder<AppDbContext>()
-        //     .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
-        //     .Options;
-        context = new AppDbContext(connection);
-
-        return context;
+        var connection = MongoDbConnection.FromUrl(new MongoUrl($"mongodb://localhost:27017/{Guid.NewGuid().ToString()}")); 
+        return new AppDbContext(connection);
     }
-
-    public static void Dispose()
-    {
-        context.Connection.Client.DropDatabase("AgGridTest");
-    }
-
+    
     public static AppDbContext GetDbContext(ITestOutputHelper output)
     {
-        var connection = MongoDbConnection.FromUrl(new MongoUrl("mongodb://localhost:27017/AgGridTest")); //MongoUrl comes from the official MongoDB driver
-
+        var connection = MongoDbConnection.FromUrl(new MongoUrl($"mongodb://localhost:27017/{Guid.NewGuid().ToString()}"));
         return new AppDbContext(connection);
     }
     public static void Cleanup(AppDbContext dbContext)
     {
-        dbContext.Connection.Client.DropDatabase("AgGridTest");
+        dbContext.Connection.Client.DropDatabase(dbContext.Connection.GetDatabase().DatabaseNamespace.DatabaseName);
     }
 
     public class MongoDbFiltering : Filtering

@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgGrid.InfiniteRowModel", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62D44B2A-2545-402C-BF3F-479510BFD2F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgGrid.InfiniteRowModel.EntityFrameworkCore", "src\AgGrid.InfiniteRowModel.EntityFrameworkCore\AgGrid.InfiniteRowModel.EntityFrameworkCore.csproj", "{9A28C0D8-FEA2-40D5-AF24-F20BB2B7BA08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgGrid.InfiniteRowModel.MongoFramework", "src\AgGrid.InfiniteRowModel.EntityFrameworkCore\AgGrid.InfiniteRowModel.MongoFramework.csproj", "{9A28C0D8-FEA2-40D5-AF24-F20BB2B7BA08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgGrid.InfiniteRowModel.MongoDb.Tests", "tests\AgGrid.InfiniteRowModel.MongoDb.Tests\AgGrid.InfiniteRowModel.MongoDb.Tests.csproj", "{D3485EA2-9A85-4C0C-A50B-67C580BFBB6E}"
 EndProject
